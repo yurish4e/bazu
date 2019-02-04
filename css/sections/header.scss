@@ -1,0 +1,199 @@
+body {
+    background-color: rebeccapurple;
+}
+
+.section_header {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(center);
+    position: relative;
+    z-index: 2;
+    margin-top: -100px;
+    background: rgba(51, 31, 107, 1);
+    background: -moz-linear-gradient(top, rgba(51, 31, 107, 1) 0%, rgba(80, 50, 171, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(51, 31, 107, 1)), color-stop(100%, rgba(80, 50, 171, 1)));
+    background: -webkit-linear-gradient(top, rgba(51, 31, 107, 1) 0%, rgba(80, 50, 171, 1) 100%);
+    background: -o-linear-gradient(top, rgba(51, 31, 107, 1) 0%, rgba(80, 50, 171, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(51, 31, 107, 1) 0%, rgba(80, 50, 171, 1) 100%);
+    background: linear-gradient(to bottom, rgba(51, 31, 107, 1) 0%, rgba(80, 50, 171, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#331f6b', endColorstr='#5032ab', GradientType=0);
+}
+
+.header {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 100;
+}
+
+//logo
+.logo {
+    display: inline-block;
+    width: 125px;
+    height: 100px;
+    background: url(../img/ico/logo.svg) left no-repeat;
+}
+
+//lang switcher
+.lang {
+    position: relative;
+    width: 125px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: $darkviolet;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    z-index: 100;
+
+    a {
+        display: inline-block;
+        width: 85px;
+        cursor: default;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    > a {
+        background: url(../img/ico/lang_switch.svg) right no-repeat;
+    }
+}
+
+.lang:hover {
+    .lang_menu {
+        height: 160px;
+    }
+
+    .lang_wrapper {
+        height: 170px;
+    }
+}
+
+.lang_wrapper {
+    position: absolute;
+    top: 50px;
+    width: 125px;
+    overflow: hidden;
+    transition: 100ms;
+    height: 0;
+    z-index: 100;
+}
+
+.lang_menu {
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(flex-start);
+    position: absolute;
+    top: 10px;
+    width: 125px;
+    border-radius: 20px;
+    height: 0;
+    overflow: hidden;
+    background-color: $darkviolet;
+    transition: 100ms;
+
+    a {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        transition: 100ms;
+    }
+
+    a:hover {
+        color: #bebebe;
+    }
+}
+
+//menu
+.menu_sub_links {
+    display: none;
+}
+
+.menu {
+    height: 100px;
+    width: 450px;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+
+.menu_item {
+    height: 100px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+}
+
+.menu_item_active {
+    border-bottom: 4px solid $yellow;
+    padding-top: 4px;
+
+    .menu_link {
+        font-weight: bold;
+        color: $yellow;
+    }
+}
+
+.menu_link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.6px;
+}
+
+//content header 
+.content_header {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(center);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    h3 {
+        line-height: 53px;
+        letter-spacing: 0.9px;
+    }
+
+    p {
+        padding-top: 30px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 24px;
+        font-family: 'Montserrat', sans-serif;
+        width: 320px;
+    }
+}
+
+.header_link {
+    display: inline-block;
+    padding-right: 60px;
+    margin-top: 55px;
+    width: 275px;
+    height: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 7px;
+    background-image: url(../img/ico/line_header.svg), url(../img/ico/lang_switch.svg);
+    background-position: bottom 9px left 0, top -4px right 4px;
+    background-repeat: no-repeat;
+    background-size: 75%, 15%;
+}

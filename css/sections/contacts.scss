@@ -1,0 +1,197 @@
+.contacts_header {
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.contact_tabs {
+    margin-top: 70px;
+
+    .ionTabs__body {
+        min-height: 555px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 80px;
+    }
+
+    .ionTabs__body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -90%;
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: -1;
+    }
+}
+
+.ionTabs__head {
+    width: 620px;
+    height: 70px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    background-color: $darkviolet_2;
+    border-radius: 30px;
+    margin-bottom: 115px;
+}
+
+.ionTabs__tab {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    cursor: pointer;
+
+    span {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+    }
+}
+
+.ionTabs__item_3 {
+    height: 540px;
+}
+
+.ionTabs__tab_state_active {
+    background-color: #fff;
+    border-radius: 30px;
+
+    span {
+        color: $violet;
+    }
+}
+
+.contacts {
+    h2 {
+        text-transform: capitalize;
+        font-size: 52px;
+        color: $violet_2;
+        margin: 0;
+        line-height: 65px;
+    }
+
+    .line {
+        margin: 40px 0 70px;
+        height: 1px;
+        width: 100%;
+        background-color: #D9D9D9;
+    }
+}
+
+.form_desc {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.form_email,
+.form_name,
+.form_absolute {
+    font-size: 11px;
+    color: #4D4D4D;
+    text-transform: capitalize;
+}
+
+.form_absolute {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.form_name {
+    padding-left: 367px;
+}
+
+.form_input {
+    width: 340px;
+    height: 60px;
+    margin-right: 50px;
+    background-color: #F2F2F2;
+    border: 0;
+    border: 1px solid #D9D9D9;
+    padding-left: 20px;
+    border-radius: 8px;
+    outline: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.form_submit {
+    width: 220px;
+    height: 60px;
+    background-color: $yellow;
+    color: $violet_2;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    transition: 500ms;
+}
+
+.form_left {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    height: 165px;
+}
+
+.form {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(flex-start);
+
+    textarea {
+        width: 340px;
+        height: 165px;
+        padding: 20px;
+        margin-right: 50px;
+        background-color: #F2F2F2;
+        border: 0;
+        border: 1px solid #D9D9D9;
+        padding-left: 20px;
+        border-radius: 8px;
+        outline: 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        resize: none;
+    }
+}
+
+//office
+.offices {
+    .container {
+        background: url(../img/bg/contacts_bg.svg) center right no-repeat;
+    }
+
+    margin: 160px 0;
+    width: 100%;
+    height: 420px;
+
+    h2 {
+        color: #fff;
+    }
+
+    span {
+        color: $yellow;
+        text-decoration: underline;
+    }
+}
+
+//call us
+.call_contacts {
+    margin-top: 0;
+}

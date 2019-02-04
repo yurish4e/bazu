@@ -1,0 +1,37 @@
+.footer {
+    position: relative;
+    z-index: 10;
+    background-color: $yellow;
+
+    .container {
+        height: 90px;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+    }
+}
+
+.footer_logo {
+    margin: 0;
+    background: url(../img/ico/logo_black.svg) center no-repeat;
+    width: 95px;
+    height: 18px;
+}
+
+.footer_contacts {
+    width: 70px;
+    height: 20px;
+    @include flexbox();
+    @include justify-content(space-between);
+}
+
+.footer_contacts_item {
+    width: 20px;
+    height: 20px;
+    background: url(../img/ico/mail_black.svg) center no-repeat;
+}
+
+.footer_contacts_item:nth-child(2) {
+    background: url(../img/ico/phone_black.svg) center no-repeat;
+}
