@@ -330,11 +330,11 @@
     position: absolute;
 }
 .back_2_element_1 {
-    right: 805px;
-    top: 230px;
+    left: 305px;
+    top: 200px;
     width: 300px;
     height: 300px;
-    animation: bg_2_1 50s infinite;
+    animation: bg_2_1 linear 50s infinite;
     animation-direction: alternate;
     
     
@@ -348,10 +348,11 @@
 
 
 .back_2_element_2 {
-    left: 300px;
-    top: 200px;
-    animation: bg_2_2 50s infinite;
+    left: 280px;
+    top: 150px;
+    animation: bg_2_2 linear 50s infinite;
     animation-direction: alternate;
+    
     .back_2_element_bg {
         width: 150px;
         height: 150px;
@@ -365,7 +366,7 @@
     top: 20px;
     width: 180px;
     height: 180px;
-    animation: bg_2_3 50s infinite;
+    animation: bg_2_3 linear 50s infinite;
     animation-direction: alternate;
  
     .back_2_element_bg {
@@ -381,7 +382,7 @@
     top: 420px;
     width: 190px;
     height: 190px;
-    animation: bg_2_4 50s infinite;
+    animation: bg_2_4 linear 50s infinite;
     animation-direction: alternate;
 
     .back_2_element_bg {
@@ -445,7 +446,7 @@
         width: 3px;
         height: 320px;
         background-color: #F7CD46;
-        border-radius: 50px;
+        border-radius: 3px;
         transform: scale(0);
     }
 }
@@ -458,7 +459,7 @@
         width: 10px;
         height: 450px;
         background-color: #F7CD46;
-        border-radius: 50px;
+        border-radius: 10px;
         transform: scale(0);
     }
 }

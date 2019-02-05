@@ -5,11 +5,12 @@
 //////////////////////
 @keyframes bg_2_2 {
     0% {
-        transform: translateX(-200px) translateY(200px);
+        transform: translateX(0) translateY(0);
+        
         
     }
     100% {
-        transform: translateX(0) translateY(0);
+        transform: translateX(-200px) translateY(200px);
     }
 }
 @keyframes bg_2_3 {
@@ -17,17 +18,15 @@
         transform: translateX(0) translateY(0);
     }
     100% {
-        transform: translateX(-300px) translateY(200px);
+        transform: translateX(-100px) translateY(400px);
     }
 }
 @keyframes bg_2_4 {
-    0% {
-        right: 550px;
-    top: 420px;
+   0% {
+        transform: translateX(0) translateY(0);
     }
     100% {
-        right: 640px;
-    top: 360px;
+        transform: translateX(-200px) translateY(-200px);
     }
 }
 @keyframes bg_3 {

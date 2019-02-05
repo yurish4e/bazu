@@ -3551,12 +3551,12 @@ template {
   position: absolute; }
 
 .back_2_element_1 {
-  right: 805px;
-  top: 230px;
+  left: 305px;
+  top: 200px;
   width: 300px;
   height: 300px;
-  -webkit-animation: bg_2_1 50s infinite;
-  animation: bg_2_1 50s infinite;
+  -webkit-animation: bg_2_1 linear 50s infinite;
+  animation: bg_2_1 linear 50s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate; }
   .back_2_element_1 .back_2_element_bg {
@@ -3568,10 +3568,10 @@ template {
     transform: scale(0); }
 
 .back_2_element_2 {
-  left: 300px;
-  top: 200px;
-  -webkit-animation: bg_2_2 50s infinite;
-  animation: bg_2_2 50s infinite;
+  left: 280px;
+  top: 150px;
+  -webkit-animation: bg_2_2 linear 50s infinite;
+  animation: bg_2_2 linear 50s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate; }
   .back_2_element_2 .back_2_element_bg {
@@ -3587,8 +3587,8 @@ template {
   top: 20px;
   width: 180px;
   height: 180px;
-  -webkit-animation: bg_2_3 50s infinite;
-  animation: bg_2_3 50s infinite;
+  -webkit-animation: bg_2_3 linear 50s infinite;
+  animation: bg_2_3 linear 50s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate; }
   .back_2_element_3 .back_2_element_bg {
@@ -3604,8 +3604,8 @@ template {
   top: 420px;
   width: 190px;
   height: 190px;
-  -webkit-animation: bg_2_4 50s infinite;
-  animation: bg_2_4 50s infinite;
+  -webkit-animation: bg_2_4 linear 50s infinite;
+  animation: bg_2_4 linear 50s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate; }
   .back_2_element_4 .back_2_element_bg {
@@ -3671,7 +3671,7 @@ template {
     width: 3px;
     height: 320px;
     background-color: #F7CD46;
-    border-radius: 50px;
+    border-radius: 3px;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0); }
@@ -3684,7 +3684,7 @@ template {
     width: 10px;
     height: 450px;
     background-color: #F7CD46;
-    border-radius: 50px;
+    border-radius: 10px;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0); }
@@ -6500,51 +6500,51 @@ body {
 
 @-webkit-keyframes bg_2_2 {
   0% {
-    -webkit-transform: translateX(-200px) translateY(200px);
-    transform: translateX(-200px) translateY(200px); }
-  100% {
     -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0); } }
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-transform: translateX(-200px) translateY(200px);
+    transform: translateX(-200px) translateY(200px); } }
 
 @keyframes bg_2_2 {
   0% {
-    -webkit-transform: translateX(-200px) translateY(200px);
-    transform: translateX(-200px) translateY(200px); }
-  100% {
     -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0); } }
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-transform: translateX(-200px) translateY(200px);
+    transform: translateX(-200px) translateY(200px); } }
 
 @-webkit-keyframes bg_2_3 {
   0% {
     -webkit-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0); }
   100% {
-    -webkit-transform: translateX(-300px) translateY(200px);
-    transform: translateX(-300px) translateY(200px); } }
+    -webkit-transform: translateX(-100px) translateY(400px);
+    transform: translateX(-100px) translateY(400px); } }
 
 @keyframes bg_2_3 {
   0% {
     -webkit-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0); }
   100% {
-    -webkit-transform: translateX(-300px) translateY(200px);
-    transform: translateX(-300px) translateY(200px); } }
+    -webkit-transform: translateX(-100px) translateY(400px);
+    transform: translateX(-100px) translateY(400px); } }
 
 @-webkit-keyframes bg_2_4 {
   0% {
-    right: 550px;
-    top: 420px; }
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
   100% {
-    right: 640px;
-    top: 360px; } }
+    -webkit-transform: translateX(-200px) translateY(-200px);
+    transform: translateX(-200px) translateY(-200px); } }
 
 @keyframes bg_2_4 {
   0% {
-    right: 550px;
-    top: 420px; }
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
   100% {
-    right: 640px;
-    top: 360px; } }
+    -webkit-transform: translateX(-200px) translateY(-200px);
+    transform: translateX(-200px) translateY(-200px); } }
 
 @-webkit-keyframes bg_3 {
   0% {
