@@ -783,6 +783,10 @@
     padding: 70px 30px;
     border-radius: 30px;
 
+    &:lang(ru) {
+        padding: 25px 30px;
+    }
+
     h5 {
         font-size: 24px;
         font-family: 'Montserrat', sans-serif;
