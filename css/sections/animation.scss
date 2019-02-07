@@ -48,6 +48,17 @@
         transform: scale(1);
     }
 }
+@keyframes bg_3_2 {
+    0% {
+        transform: translateX(80px) rotate(18deg);
+    }
+    50% { 
+        transform: translateX(120px) rotate(18deg);
+    }
+    100% {
+        transform: translateX(180px) rotate(18deg);
+    }
+}
 @keyframes circle {
 	from { -webkit-transform: rotate(0deg) translateX(200px) rotate(0deg); }
      to   {  -webkit-transform: rotate(360deg) translateX(200px) rotate(200deg); }
