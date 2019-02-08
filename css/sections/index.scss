@@ -254,7 +254,7 @@
     background-size: 63%;
     position: absolute;
     top: 0;
-    right: -900px;
+    right: 0;
     transition-timing-function: ease-out;
     transition-duration: 2000ms;
     transition-delay: 500ms;
@@ -280,55 +280,93 @@
 .back_1_element {
     position: absolute;
 }
+
 .back_1_element_1 {
     right: 600px;
     top: 200px;
     width: 200px;
     height: 200px;
-    background: url(../img/animation/1_1.svg) center no-repeat;
-    animation:circle 150s linear 1s infinite;
+    animation: circle 150s linear infinite;
     animation-direction: alternate;
+
+    .back_1_element_bg {
+        width: 200px;
+        height: 200px;
+        background: url(../img/animation/1_1.svg) center no-repeat;
+        transform: scale(0);
+    }
 }
+
 .back_1_element_2 {
     right: 600px;
     top: 200px;
     width: 250px;
     height: 300px;
-    background: url(../img/animation/1_2.svg) center no-repeat;
-    animation:circle_2 150s linear 1s infinite;
+    animation: circle_2 150s linear infinite;
     animation-direction: alternate;
+
+    .back_1_element_bg {
+        width: 250px;
+        height: 300px;
+        background: url(../img/animation/1_2.svg) center no-repeat;
+        transform: scale(0);
+
+    }
 }
+
 .back_1_element_3 {
     right: 600px;
     top: 200px;
     width: 300px;
     height: 300px;
-    background: url(../img/animation/1_3.svg) center no-repeat;
-    animation:circle_3 150s linear 1s infinite;
-    animation-direction: alternate;    
+    animation: circle_3 150s linear infinite;
+    animation-direction: alternate;
+
+    .back_1_element_bg {
+        width: 300px;
+        height: 300px;
+        background: url(../img/animation/1_3.svg) center no-repeat;
+        transform: scale(0);
+    }
 }
+
 .back_1_element_4 {
     right: 650px;
     top: 200px;
     width: 250px;
     height: 300px;
-    background: url(../img/animation/1_5.svg) center no-repeat;
-    animation:circle_4 150s linear 1s infinite;
+    animation: circle_4 150s linear infinite;
     animation-direction: alternate;
+
+    .back_1_element_bg {
+        width: 250px;
+        height: 300px;
+        background: url(../img/animation/1_5.svg) center no-repeat;
+        transform: scale(0);
+    }
 }
+
 .back_1_element_5 {
     right: 650px;
     top: 200px;
     width: 300px;
     height: 300px;
-    background: url(../img/animation/1_4.svg) center no-repeat;
-    animation:circle_5 150s linear 1s infinite;
-    animation-direction: alternate;    
+    animation: circle_5 150s linear infinite;
+    animation-direction: alternate;
+
+    .back_1_element_bg {
+        width: 300px;
+        height: 300px;
+        background: url(../img/animation/1_4.svg) center no-repeat;
+        transform: scale(0);
+    }
 }
+
 // 2
 .back_2_element {
     position: absolute;
 }
+
 .back_2_element_1 {
     left: 305px;
     top: 200px;
@@ -336,8 +374,8 @@
     height: 300px;
     animation: bg_2_1 linear 50s infinite;
     animation-direction: alternate;
-    
-    
+
+
     .back_2_element_bg {
         width: 100px;
         height: 100px;
@@ -352,7 +390,7 @@
     top: 150px;
     animation: bg_2_2 linear 50s infinite;
     animation-direction: alternate;
-    
+
     .back_2_element_bg {
         width: 150px;
         height: 150px;
@@ -368,7 +406,7 @@
     height: 180px;
     animation: bg_2_3 linear 50s infinite;
     animation-direction: alternate;
- 
+
     .back_2_element_bg {
         width: 180px;
         height: 180px;
@@ -403,18 +441,16 @@
     width: 20px;
     transform: rotate(18deg);
 }
+
 .back_3_element_1 {
     left: 200px;
     top: 130px;
     height: 800px;
     transition: 3s;
-    animation: bg_3_2 linear 10s infinite;
+    animation: bg_3_2 linear 20s infinite;
+    animation-direction: alternate;
+
     .back_3_element_bg {
-        /*width: 100px;
-        height: 100px;
-        background: url(../img/animation/3_1.svg) center no-repeat;
-        background-size: 0%;
-        transition: 2s;*/
         width: 20px;
         height: 320px;
         background-color: #47B5FF;
@@ -423,26 +459,14 @@
     }
 }
 
-
-/*.back_3_element_2 {
-   left: 280px;
-    top: 200px;
-    height: 800px;
-    transition: 3s;
-    
-    .back_3_element_bg {
-        width: 5px;
-        height: 700px;
-        background-color: #F7CD46;
-        border-radius: 50px;
-    }
-}*/
 .back_3_element_2 {
-   left: 280px;
+    left: 280px;
     top: 300px;
     height: 320px;
     transition: 3s;
-    
+    animation: bg_3_3 linear 20s infinite;
+    animation-direction: alternate;
+
     .back_3_element_bg {
         width: 3px;
         height: 320px;
@@ -456,6 +480,9 @@
     left: 310px;
     top: 90px;
     height: 800px;
+    animation: bg_3_4 linear 20s infinite;
+    animation-direction: alternate;
+
     .back_3_element_bg {
         width: 10px;
         height: 450px;
@@ -470,11 +497,12 @@
 .back_2_element_scale {
     background-size: 100% !important;
 }
+
 .back_3_element_scale {
-    animation: bg_3_1 3000s 1;
+    animation: bg_3 3000s 1;
     /*transform: scale(1);
     transition-duration: 5s;*/
-    
+
 }
 
 .section_1 {
@@ -529,8 +557,6 @@
         /*background: url(../img/bg/index_3_back.svg) center right 100px no-repeat;
         background-size: 63%;*/
         right: 0;
-        animation: bg_3 20s infinite;
-        animation-direction: alternate;
     }
 
     .section_background_front {

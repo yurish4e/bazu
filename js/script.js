@@ -30,7 +30,8 @@ $(document).ready(function () {
     $('#section_2').appear();
     $('#section_3').appear();
     $('#section_1').on('appear', function (event, $all_appeared_elements) {
-        $(".section_background_back_1").addClass("background_visible");
+        /*$(".section_background_back_1").addClass("background_visible");*/
+        $(".back_1_element_bg").addClass("back_3_element_scale");
         $(".section_background_front_1").addClass("background_visible");
         $(".bg_show_1").addClass("bg_show_visible");
         // this element is now inside browser viewport

@@ -1,3 +1,8 @@
+@keyframes link {
+    0% { transform: translateY(-7px);}
+    50%{ transform: translateY(7px);  }
+    100%{ transform: translateY(-7px);  }
+}
 @keyframes bg_2_1 {
     0% { transform: rotate(0deg) translateX(300px) translateY(50px) rotate(0deg) ;}
     100%{ transform: rotate(-180deg) translateX(20px) translateY(150px) rotate(180deg);  }
@@ -31,14 +36,6 @@
 }
 @keyframes bg_3 {
     0% {
-        transform: translateX(80px);
-    }
-    100% {
-        transform: translateX(180px);
-    }
-}
-@keyframes bg_3_1 {
-    0% {
         transform: scale(0);
     }
     0.1% { 
@@ -48,15 +45,46 @@
         transform: scale(1);
     }
 }
+@keyframes bg_3_1 {
+   
+    0% {
+        transform: translateX(80px);
+    }
+    100% {
+        transform: translateX(180px);
+    }
+}
 @keyframes bg_3_2 {
     0% {
-        transform: translateX(80px) rotate(18deg);
+        transform: translateX(70px) rotate(18deg);
+    }
+    50% { 
+        transform: translateX(115px) rotate(18deg);
+    }
+    100% {
+        transform: translateX(160px) rotate(18deg);
+    }
+}
+@keyframes bg_3_3 {
+    0% {
+        transform: translateX(70px) rotate(18deg);
     }
     50% { 
         transform: translateX(120px) rotate(18deg);
     }
     100% {
         transform: translateX(180px) rotate(18deg);
+    }
+}
+@keyframes bg_3_4 {
+    0% {
+        transform: translateX(70px) rotate(18deg);
+    }
+    50% { 
+        transform: translateX(125px) rotate(18deg);
+    }
+    100% {
+        transform: translateX(200px) rotate(18deg);
     }
 }
 @keyframes circle {

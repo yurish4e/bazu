@@ -197,3 +197,19 @@ body {
     background-repeat: no-repeat;
     background-size: 75%, 15%;
 }
+.header_link_animated {
+    position: relative;
+    background-image: url(../img/ico/line_header.svg);
+    background-position: bottom 9px left 0;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    span {
+        position: absolute;
+        right: 10px;
+        width: 45px;
+        height: 40px;
+        background: url(../img/ico/lang_switch.svg) center no-repeat;
+        background-size: 100%;
+        animation: link linear 10s infinite;
+    }
+}
