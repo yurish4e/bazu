@@ -5,7 +5,7 @@
     margin-top: -100px;
     @include flexbox();
     @include flex-direction(column);
-    @include justify-content(flex-end);
+    @include justify-content(flex-start);
     padding-top: 100px;
 background: rgba(51,31,107,1);
 background: -moz-linear-gradient(top, rgba(51,31,107,1) 0%, rgba(80,50,171,1) 100%);
@@ -28,7 +28,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331f6b', end
 .process_header_content {
     position: relative;
     z-index: 5;
-    height: 490px;
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(flex-start);

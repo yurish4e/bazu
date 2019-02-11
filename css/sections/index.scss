@@ -266,7 +266,7 @@
     right: -900px;
     height: 100%;
     width: 100%;
-    background: url(../img/bg/index_1_front.svg) center right 200px no-repeat;
+    background: url(../img/bg/index_1_front.png) center right 200px no-repeat;
     background-size: 63%;
     transition: transform;
     transition-timing-function: ease;
@@ -528,7 +528,8 @@
     }
 
     .section_background_front {
-        background: url(../img/bg/index_2_front.svg) center right 200px no-repeat;
+        background: url(../img/bg/index_2_front.png) center right 200px no-repeat;
+        background-size: 63%;
 
     }
 
@@ -560,7 +561,8 @@
     }
 
     .section_background_front {
-        background: url(../img/bg/index_3_front.svg) bottom -40px right 120px no-repeat;
+        background: url(../img/bg/index_3_front.png) bottom -40px right 120px no-repeat;
+        background-size: 55%;
     }
 
     .main_content_right {
