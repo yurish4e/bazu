@@ -3,9 +3,10 @@
     max-height: 1080px;
     height: 100vh;
     margin-top: -100px;
+    padding-top: 100px;
     @include flexbox();
     @include flex-direction(column);
-    @include justify-content(flex-end);
+    @include justify-content(flex-start);
     background: rgba(32, 120, 178, 1);
     background: -moz-linear-gradient(top, rgba(32, 120, 178, 1) 0%, rgba(71, 181, 255, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32, 120, 178, 1)), color-stop(100%, rgba(71, 181, 255, 1)));
@@ -280,7 +281,7 @@
     @include justify-content(flex-start);
     @include align-items(flex-end);
     height: 90px;
-
+    margin-bottom: 40px;
     h2 {
         font-size: 88px;
         color: #E5E5E5;

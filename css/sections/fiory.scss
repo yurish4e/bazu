@@ -1,0 +1,56 @@
+.section_header_fiory {
+    background: #b24f53; /* Old browsers */
+background: -moz-linear-gradient(top, #b24f53 0%, #6e9fa3 0%, #91d1d7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b24f53 0%,#6e9fa3 0%,#91d1d7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b24f53 0%,#6e9fa3 0%,#91d1d7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24f53', endColorstr='#91d1d7',GradientType=0 ); /* IE6-9 */
+    .project_header_content  p {
+        color: #fff;
+    }
+}
+.wrapper_fiory {
+    background-color: $lblue;
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        color: #4D4D4D;
+    }
+
+    .lang,
+    .lang_menu {
+        background-color: #5E888C;
+    }
+}
+.solution_fiory {
+    width: 450px;
+    text-align: center;
+    margin: 40px auto;
+    
+}
+.solution_fiory:last-child {
+    margin-bottom: 0;
+}
+.fiory_wrapper {
+    padding-bottom: 160px;
+
+    .case_img {
+        width: 370px;
+        height: 530px;
+        position: absolute;
+        bottom: -70px;
+        right: -90px;
+        background: url(../img/bg/fiory_1.png) center no-repeat;
+        background-size: 150%;
+    }
+    .case_bg_2 {
+        .case_img {
+            bottom: 30px;
+            left: 0;
+            width: 430px;
+            height: 430px;
+            background: url(../img/bg/fiory_2.png) center no-repeat;
+            background-size: contain;
+        }
+    }
+}
