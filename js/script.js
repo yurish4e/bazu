@@ -25,7 +25,9 @@ $(document).ready(function () {
 		}
 	});
     /*menu*/
-    $.ionTabs("#tabs_1");
+    $.ionTabs("#tabs_1", {
+        type: "storage"
+    });
     $('#section_1').appear();
     $('#section_2').appear();
     $('#section_3').appear();
