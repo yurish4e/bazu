@@ -4658,8 +4658,8 @@ template {
   margin-top: 30px; }
 
 .section_header_process {
-  min-height: 600px;
-  max-height: 800px;
+  min-height: 700px;
+  max-height: 1080px;
   height: 100vh;
   margin-top: -100px;
   display: -webkit-box;
