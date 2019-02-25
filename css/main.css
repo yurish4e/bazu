@@ -4346,7 +4346,8 @@ template {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  color: #fff; }
+  color: #fff;
+  z-index: 40; }
   .project_header_content h1 {
     color: #fff;
     font-size: 64px;
@@ -4393,7 +4394,7 @@ template {
   width: 780px;
   height: 850px;
   background: url(../img/bg/header_project.svg) center no-repeat;
-  z-index: 2; }
+  z-index: 30; }
 
 .problems {
   margin-top: 80px;
@@ -5184,6 +5185,16 @@ template {
   .wrapper_salon .lang,
   .wrapper_salon .lang_menu {
     background-color: #994447; }
+  .wrapper_salon .section_header_project_bg {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -310px;
+    right: 150px;
+    width: 804px;
+    height: 620px;
+    background: url(../img/bg/salon_bg.png) center no-repeat;
+    background-size: contain;
+    z-index: 30; }
 
 .salon_wrapper {
   padding-bottom: 160px; }
@@ -5230,7 +5241,8 @@ template {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24f53', endColorstr='#91d1d7',GradientType=0 );
   /* IE6-9 */ }
   .section_header_fiory .project_header_content p {
-    color: #fff; }
+    color: #fff;
+    z-index: 100; }
 
 .wrapper_fiory {
   background-color: #91D1D7; }
@@ -5241,6 +5253,16 @@ template {
   .wrapper_fiory .lang,
   .wrapper_fiory .lang_menu {
     background-color: #5E888C; }
+  .wrapper_fiory .section_header_project_bg {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -375px;
+    right: 150px;
+    width: 748px;
+    height: 748px;
+    background: url(../img/bg/fiory_bg.png) center no-repeat;
+    background-size: contain;
+    z-index: 30; }
 
 .solution_fiory {
   width: 450px;
@@ -6653,6 +6675,22 @@ body {
     height: 308px;
     background-size: 100%;
     z-index: 2; }
+  .wrapper_fiory .section_header_project_bg {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 310px;
+    height: 240px;
+    background-size: 100%;
+    z-index: 2; }
+  .wrapper_salon .section_header_project_bg {
+    position: absolute;
+    top: 80px;
+    right: -10px;
+    width: 310px;
+    height: 240px;
+    background-size: 100%;
+    z-index: 2; }
   .section_header_process_bg {
     position: absolute;
     top: 20px;
@@ -6665,6 +6703,7 @@ body {
   .project_header_content.container {
     padding: 0; }
   .process_header_content {
+    height: 490px;
     padding: 0 0 80px; }
   .project_header_content,
   .process_header_content {

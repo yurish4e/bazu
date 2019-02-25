@@ -50,6 +50,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24f53', end
     .lang_menu {
         background-color: #994447;
     }
+    .section_header_project_bg {
+        position: absolute;
+        bottom: 50%;
+        margin-bottom: -310px;
+        right: 150px;
+        width: 804px;
+        height: 620px;
+        background: url(../img/bg/salon_bg.png) center no-repeat;
+        background-size: contain;
+        z-index: 30;
+    }
 }
 .salon_wrapper {
     padding-bottom: 160px;

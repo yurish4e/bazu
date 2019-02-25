@@ -111,7 +111,7 @@
     @include justify-content(space-between);
     @include align-items(flex-start);
     color: #fff;
-
+    z-index: 40;
     h1 {
         color: #fff;
         font-size: 64px;
@@ -156,7 +156,7 @@
     width: 780px;
     height: 850px;
     background: url(../img/bg/header_project.svg) center no-repeat;
-    z-index: 2;
+    z-index: 30;
 }
 
 //problems
