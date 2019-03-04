@@ -5024,7 +5024,8 @@ template {
 
 .form_email,
 .form_name,
-.form_absolute {
+.form_absolute,
+.form_name_bottom {
   font-size: 11px;
   color: #4D4D4D;
   text-transform: capitalize; }
@@ -5035,7 +5036,10 @@ template {
   left: 0; }
 
 .form_name {
-  padding-left: 367px; }
+  padding-left: 360px; }
+
+.form_name_bottom {
+  padding-left: 360px; }
 
 .form_input {
   width: 340px;
@@ -5048,7 +5052,52 @@ template {
   border-radius: 8px;
   outline: 0;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms; }
+
+.form_input:hover, textarea:hover {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); }
+
+.form_input:focus, textarea:focus {
+  border: 1px solid #4C4C4C; }
+
+.input_wrapper {
+  position: relative;
+  display: inline-block; }
+
+.input_wrong_message {
+  position: absolute;
+  top: -29px;
+  right: 50px;
+  color: #E5656B;
+  font-size: 11px;
+  font-family: 'Raleway', sans-serif; }
+
+.input_available_message {
+  position: absolute;
+  top: -29px;
+  right: 50px;
+  color: #2DA771;
+  font-size: 11px;
+  font-family: 'Raleway', sans-serif; }
+
+.input_wrong, .input_wrong:hover, .input_wrong:focus {
+  position: relative;
+  border: 1px solid #E5656B;
+  background-image: url(../img/bg/contacts_wrong.svg);
+  background-position: center right 18px;
+  background-repeat: no-repeat; }
+
+.input_available, .input_available:hover, .input_available:focus {
+  position: relative;
+  border: 1px solid #2DA771;
+  background-image: url(../img/bg/contacts_available.svg);
+  background-position: center right 18px;
+  background-repeat: no-repeat; }
 
 .form_submit {
   width: 220px;
@@ -5118,7 +5167,10 @@ template {
     outline: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    resize: none; }
+    resize: none;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms; }
 
 .offices {
   margin: 160px 0;
@@ -7078,6 +7130,10 @@ body {
       width: 100%; }
     .form textarea {
       width: 100%; }
+  .input_wrong_message {
+    right: 0; }
+  .input_available_message {
+    right: 0; }
   .ionTabs__item_3 {
     height: 775px; }
   .form_textarea {
@@ -7093,8 +7149,13 @@ body {
       top: 110px;
       left: 0;
       padding: 0; }
+    .form_desc .form_name_bottom {
+      position: absolute;
+      top: 220px;
+      left: 0;
+      padding: 0; }
     .form_desc .form_absolute {
-      top: 220px; }
+      top: 110px; }
   .offices {
     margin: 0; }
     .offices .container {

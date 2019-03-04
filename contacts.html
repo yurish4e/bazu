@@ -99,8 +99,15 @@
                                 <span class="form_name">Phone</span>
                             </div>
                             <form action="form.php" class="form">
-                                <input type="text" class="form_input">
-                                <input type="text" class="form_input">
+                                <span class="input_wrapper">
+                                    <span class="input_wrong_message">Wrong Email Format</span>
+                                    <input type="text" class="form_input input_wrong">
+                                </span>
+                                <span class="input_wrapper">
+                                    <span class="input_available_message">Email is available</span>
+                                    <input type="text" class="form_input input_available">
+                                </span>
+
                                 <input type="submit" class="form_submit" value="Request Call">
                             </form>
                         </div>
@@ -109,13 +116,20 @@
                             <div class="line"></div>
                             <div class="form_desc">
                                 <span class="form_email">Email</span>
-                                <span class="form_name">Your Message</span>
+                                <span class="form_name_bottom">Your Message</span>
                                 <span class="form_absolute">Your Name</span>
                             </div>
                             <form action="form.php" class="form form_textarea">
                                 <div class="form_left">
-                                    <input type="text" class="form_input">
-                                    <input type="text" class="form_input">
+                                    <span class="input_wrapper">
+                                        <span class="input_wrong_message">Wrong Email Format</span>
+                                        <input type="text" class="form_input input_wrong">
+                                    </span>
+                                    <span class="input_wrapper">
+                                       <span class="input_wrong_message">Wrong Email Format</span>
+                                        <input type="text" class="form_input input_wrong">
+                                    </span>
+
                                 </div>
                                 <textarea name="" id="" rows="9"></textarea>
                                 <input type="submit" class="form_submit" value="Send Message">

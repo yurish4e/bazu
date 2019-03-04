@@ -1552,7 +1552,12 @@
             width: 100%;
         }
     }
-
+.input_wrong_message {
+    right: 0;
+}
+.input_available_message {
+    right: 0;
+}
     .ionTabs__item_3 {
         height: 775px;
     }
@@ -1576,9 +1581,14 @@
             left: 0;
             padding: 0;
         }
-
-        .form_absolute {
+        .form_name_bottom {
+            position: absolute;
             top: 220px;
+            left: 0;
+            padding: 0;
+        }
+        .form_absolute {
+            top: 110px;
         }
     }
 
