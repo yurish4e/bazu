@@ -4,6 +4,7 @@
     height: 100vh;
     margin-top: -100px;
     padding-top: 100px;
+    padding-left: 235px;
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(flex-start);
@@ -29,14 +30,14 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: 40px;
+    margin-right: 60px;
     background: url(../img/bg/home.svg) center no-repeat;
     position: relative;
 }
 
 .breadcrumbs_home::after {
     position: absolute;
-    right: -30px;
+    right: -40px;
     top: 0;
     content: '';
     display: inline-block;
@@ -52,10 +53,23 @@
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 7px;
     line-height: 24px;
 }
-
+.breadcrumbs_item_line {
+    margin-left: 60px;
+    position: relative;
+}
+.breadcrumbs_item_line::before {
+    position: absolute;
+    left: -45px;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/ico/crumbs.svg) center no-repeat;
+}
 .wrapper_project {
     background-color: $blue;
 

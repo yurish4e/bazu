@@ -1,4 +1,19 @@
+.breadcrumbs_contacts {
+    padding-left: 120px;
+}
 .section_contacts {
+    margin-top: -100px;
+    padding-top: 100px;
+    height: 650px;
+    margin-bottom: -350px;
+    background: rgba(51,31,107,1);
+background: -moz-linear-gradient(top, rgba(51,31,107,1) 0%, rgba(80,50,171,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(51,31,107,1)), color-stop(100%, rgba(80,50,171,1)));
+background: -webkit-linear-gradient(top, rgba(51,31,107,1) 0%, rgba(80,50,171,1) 100%);
+background: -o-linear-gradient(top, rgba(51,31,107,1) 0%, rgba(80,50,171,1) 100%);
+background: -ms-linear-gradient(top, rgba(51,31,107,1) 0%, rgba(80,50,171,1) 100%);
+background: linear-gradient(to bottom, rgba(51,31,107,1) 0%, rgba(80,50,171,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331f6b', endColorstr='#5032ab', GradientType=0 );
     .container {
         @include flexbox();
         @include justify-content(flex-start);
@@ -6,6 +21,7 @@
     }
 }
 .contacts_header {
+    padding-left: 120px;
     font-size: 52px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -15,7 +31,9 @@
 
 .contact_tabs {
     margin-top: 70px;
-
+    ul {
+        margin-left: 120px;
+    }
     .ionTabs__body {
         min-height: 555px;
         position: relative;
@@ -45,7 +63,7 @@
     @include justify-content(center);
     @include align-items(center);
     background-color: $darkviolet_2;
-    border-radius: 30px;
+    border-radius: 35px;
     margin-bottom: 115px;
 }
 
