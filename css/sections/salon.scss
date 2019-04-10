@@ -50,6 +50,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24f53', end
     .lang_menu {
         background-color: #994447;
     }
+    .section_header_project_bg_wrapper {
+        position: absolute;
+        bottom: 90px;
+        right: 0;
+        width: 748px;
+        height: 748px;
+        z-index: 30;
+    }
     .section_header_project_bg {
         position: absolute;
         bottom: 50%;

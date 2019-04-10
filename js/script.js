@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $(".back_2_element_salon").addClass("back_3_element_scale");
+    $(".back_3_element_salon").addClass("back_3_element_scale");
+    $(".back_1_element_bg_fiory").addClass("back_3_element_scale");
      /*плавный переход к якорю*/
     $('a[href^="#"]').on('click', function(event) {
     event.preventDefault();
@@ -32,6 +35,7 @@ $(document).ready(function () {
     $('#section_1').on('appear', function (event, $all_appeared_elements) {
         /*$(".section_background_back_1").addClass("background_visible");*/
         $(".back_1_element_bg").addClass("back_3_element_scale");
+        
         $(".section_background_front_1").addClass("background_visible");
         $(".bg_show_1").addClass("bg_show_visible");
         // this element is now inside browser viewport

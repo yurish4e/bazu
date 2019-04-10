@@ -27,8 +27,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24f53', end
     .section_header_project_bg_wrapper {
         position: absolute;
         bottom: 50%;
-        margin-bottom: -375px;
-        right: 150px;
+        margin-bottom: -180px;
+        right: 325px;
         width: 748px;
         height: 748px;
         z-index: 30;
@@ -39,6 +39,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24f53', end
         background: url(../img/bg/fiory_bg.png) center no-repeat;
         background-size: contain;
         
+    }
+    .section_background_back_fiory {
+        position: absolute;
+        right: -300px;
+        top: 200px;
     }
 }
 .solution_fiory {
